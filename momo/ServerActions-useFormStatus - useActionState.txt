@@ -1,0 +1,14 @@
+✅ Server Actions
+기존에 useState와 useEffect를 사용해 관리하던 데이터 변경 작업(fetch, form 제출 등)을 서버에서 직접 실행하는 방식.
+fetch 없이 서버에 직접 액션을 보낼 수 있어 클라이언트-서버 간 데이터 흐름이 단순해짐.
+
+✅ useFormStatus
+server action이 실행 중인지 확인하는 훅.
+pending 상태를 감지하여 버튼을 비활성화하는 등 인터랙티브한 처리를 할 수 있음.
+폼 내부에서만 사용할 수 있으며
+클라이언트 환경에서 실행됨.
+
+✅ useActionState
+server action의 실행 결과를 상태로 저장하는 훅.
+useState처럼 사용할 수 있지만, server action과 연결되어 자동으로 상태 업데이트가 이루어짐.
+클라이언트 환경에서 실행
